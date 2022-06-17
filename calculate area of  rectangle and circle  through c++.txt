@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std ;
+
+float area(int) ;
+int area(int ,int) ;
+
+int main()
+ {
+  int r ;
+  cout<< " enter radius of  a circle  "<<endl ;
+  cin>> r ;
+  
+ float  AR=area(r);
+  cout<< " area of circle is  "<<AR <<endl ;
+  
+  int l,b ;
+  cout<<"enter lenght and breath of rectangle  "; 
+  cin>>l>>b ;
+  
+  int AREA;
+  AREA=area(l,b) ;
+  cout<<"area of triangle is   " <<AREA<<endl ;
+  return 0 ;
+ }
+ 
+ 
+ float area (int R)
+ {
+     return(3.14*R*R);
+ }
+ 
+ int area (int L ,int B) 
+ {
+     return(L*B) ;
+ }
